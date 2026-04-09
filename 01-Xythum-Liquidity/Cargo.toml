@@ -1,4 +1,4 @@
-The manifest for your Rust smart contract. It needs the soroban-sdk dependency.
+
 [package]
 name = "xythum-vault"
 version = "0.1.0"
