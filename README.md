@@ -9,6 +9,7 @@ git clone https://github.com/[Your-Username]/Horizon-Sovereign-Stack-HSS.git
 cd Horizon-Sovereign-Stack-HSS
 # Install dependencies for the P2P mesh
 cd 03-Sovereign-Settlement && npm install
+Each layer contains its own specialized logic, from Soroban smart contracts (Rust) to P2P networking (Node.js).
 One-Pager: https://docs.google.com/document/d/1ZfYUoclxfAS2lnqpyPIbajLQVQdOpkFh8DdSNQkDL9c/edit?usp=sharing
 
 Demo Video: [Coming Soon - YouTube Link]
