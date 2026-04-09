@@ -12,4 +12,6 @@ cd 03-Sovereign-Settlement && npm install
 Each layer contains its own specialized logic, from Soroban smart contracts (Rust) to P2P networking (Node.js).
 One-Pager: https://docs.google.com/document/d/1ZfYUoclxfAS2lnqpyPIbajLQVQdOpkFh8DdSNQkDL9c/edit?usp=sharing
 
-Demo Video: [Coming Soon - YouTube Link]
+Demo Video: 
+https://youtu.be/d7ISy4UiMoo
+
