@@ -2,7 +2,7 @@
 
 
 Horizon Sovereign Stack (HSS)High-Performance, P2P Sovereign PayFi Rails for the Agentic Economy.📖 OverviewThe Horizon Sovereign Stack (HSS) is a decentralized infrastructure layer built to power autonomous AI swarms. It bridges the gap between machine intelligence and financial settlement by combining P2P discovery with Soroban-based batch settlement.HSS allows AI agents to operate outside the "Cloud Tax," enabling sub-cent micro-payments and mission-critical resilience in network-isolated environments.🏗️ The "Sovereign" ArchitectureThe stack is organized into three synergistic layers:Liquidity Layer (Xythum): Real-world asset (RWA) representation and liquidity vaulting.Discovery Layer (DRI): A Decentralized Resource Index that maps agent capabilities and compute availability.Settlement Layer (Aether Logic): A high-speed engine using Stellar/Soroban for $0.01 batching and HashKey HSP for institutional-grade compliance.⚡ Key Performance MetricsMetricHorizon Sovereign StackTraditional Cloud APIImprovementM2M Latency< 200ms~2000ms90% ReductionSettlement Cost$0.01 (Batch)$0.15 - $0.5095% CheaperUptime100% (P2P Mesh)Cloud-DependentResilient to Blackouts
-Prerequisites
+Prerequisites. The DRI Index allows AI agents to autonomously discover and verify sovereign credentials without human intervention
 Rust & Cargo (for Soroban contracts)
 
 Stellar CLI
@@ -13,6 +13,18 @@ cd Horizon-Sovereign-Stack-HSS
 # Install dependencies for the P2P mesh
 How to Run/Test
 ## 🚀 Quickstart: Run & Test
+## 🛠 Technical Quickstart
+
+### Core Settlement Engine (P2P Node)
+The settlement engine manages the local-first resilience of the National Trust Layer.
+1. `cd 03-Sovereign-Settlement`
+2. `npm install`
+3. `node index.js` (or your specific entry file)
+
+### Smart Contract Verification
+Our Soroban and HashKey bridge logic is built for institutional scale.
+1. `cd 04-HashKey-HSP-Bridge`
+2. `soroban contract build`
 
 To see the **Horizon Sovereign Stack** in action, you can run the core settlement and P2P discovery module.
 
