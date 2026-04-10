@@ -36,6 +36,8 @@ Expected Output: test result: ok. 0 passed; 0 failed; (or your specific test cou
 * **Confidence:** Even if they don't actually run the code, seeing the **"Expected Output"** notes tells them you’ve tested it yourself and it’s a functional piece of software, not just a document.
 
 **Quick Tip:** Make sure the `npm start` command in your `03-Sovereign-Settlement` folder actually triggers a script in your `package.json`. If it's a different command, just swap it out in the markdown above!
+
+
 cd 03-Sovereign-Settlement && npm install
 Each layer contains its own specialized logic, from Soroban smart contracts (Rust) to P2P networking (Node.js).
 One-Pager: https://docs.google.com/document/d/1ZfYUoclxfAS2lnqpyPIbajLQVQdOpkFh8DdSNQkDL9c/edit?usp=sharing
