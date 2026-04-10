@@ -23,3 +23,6 @@ To build the bridge contracts:
 2. Run:
    ```bash
    soroban contract build
+
+   To run tests:
+   soroban contract test
