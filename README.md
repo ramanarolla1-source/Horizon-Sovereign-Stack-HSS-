@@ -8,7 +8,7 @@ Rust & Cargo (for Soroban contracts)
 Stellar CLI
 
 Node.js (for the P2P discovery layer)
-git clone https://github.com/[Your-Username]/Horizon-Sovereign-Stack-HSS.git
+git clone https://github.com/ramanarolla1-source/Horizon-Sovereign-Stack-HSS.git
 cd Horizon-Sovereign-Stack-HSS
 # Install dependencies for the P2P mesh
 cd 03-Sovereign-Settlement && npm install
