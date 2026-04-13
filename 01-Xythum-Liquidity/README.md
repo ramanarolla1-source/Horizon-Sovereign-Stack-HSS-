@@ -1,15 +1,13 @@
-# 01-Xythum-Liquidity 💰
+## ⚖️ Sovereign Security & Vaulting
+Xythum utilizes **Non-Custodial Liquidity Vaults** to ensure that sovereign assets are managed by code, not intermediaries. 
+* **Automated Rebalancing:** Dynamic liquidity allocation based on agent demand across the P2P mesh.
+* **Tamper-Proof Settlement:** Every RWA movement is hardware-anchored, ensuring the integrity of the National Trust Layer.
 
-Xythum is the liquidity backbone of the Horizon Sovereign Stack. It provides the necessary depth and cross-chain settlement rails to allow autonomous agents to transact with Real World Assets (RWAs).
+## 🔄 Transaction Workflow
+1. **Discovery:** Agent identifies target service via the **DRI Index**.
+2. **Commitment:** Xythum locks the required liquidity in a temporary non-custodial vault.
+3. **Execution:** **Aether Logic** processes the sub-cent batch settlement on Soroban.
+4. **Finality:** The transaction is bridged and finalized on **HashKey Chain** for institutional compliance.
 
-## 🚀 Role in the Sovereign Stack
-Xythum functions as the **Unified Liquidity Layer**, ensuring that regional assets are tokenized and accessible across the National Trust Layer (NTL) without centralized intermediaries.
-
-## 🛠 Technical Features
-* **Cross-Chain Aggregation:** Seamlessly moves value between Stellar/Soroban and HashKey Chain.
-* **Money-Layer Vaulting:** Smart contract-based asset locking for secure M2M (Machine-to-Machine) settlement.
-* **Privacy-as-a-Service:** Integrated privacy adaptation framework for compliant, yet private, institutional transactions.
-* **Slippage Management:** Optimized for high-frequency batch settlement at sub-cent costs.
-
-## 🔗 Interoperability
-Xythum connects the local P2P mesh (DRI Index) to global liquidity pools, enabling the "Sovereign" economy to scale internationally.
+## 🌍 Impact: Scaling the Agentic Economy
+By eliminating the "Cloud Tax" and providing sub-cent settlement, Xythum enables millions of micro-transactions to occur autonomously—powering everything from regional academic rails to decentralized energy markets.
