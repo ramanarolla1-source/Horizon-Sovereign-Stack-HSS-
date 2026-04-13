@@ -66,8 +66,13 @@ Solution Architecture
 🚀 Installation & Technical Validation
 To validate the Horizon Sovereign Stack, follow this streamlined process to confirm the interoperability between the P2P discovery layer and the Soroban settlement engine.
 
-1. Environment Setup
-2. # Clone the repository
+## 🚀 Installation & Technical Validation
+
+To validate the **Horizon Sovereign Stack**, follow this streamlined process to confirm the interoperability between the P2P discovery layer and the Soroban settlement engine.
+
+### 1. Environment Setup
+```bash
+# Clone the repository
 git clone [https://github.com/ramanarolla1-source/Horizon-Sovereign-Stack-HSS-.git](https://github.com/ramanarolla1-source/Horizon-Sovereign-Stack-HSS-.git)
 cd Horizon-Sovereign-Stack-HSS-
 
@@ -97,6 +102,7 @@ P2P Discovery (Node.js): A local-first mesh network that eliminates dependency o
 
 HashKey Bridge (Solidity): The institutional gateway for HSP-20 compliant asset movement and global scale.
 
+Resources:
 
 One-Pager: https://docs.google.com/document/d/1ZfYUoclxfAS2lnqpyPIbajLQVQdOpkFh8DdSNQkDL9c/edit?usp=sharing
 
