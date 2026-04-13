@@ -33,10 +33,3 @@ The bridge contracts have been rigorously tested against common cross-chain atta
 * **[PASS]** Unauthorized agent rejection (ZK-Identity failure).
 * **[PASS]** Replay attack prevention (Nonce-based validation).
 * **[PASS]** HSP-20 compliance check during asset release.
-
-* 
-1. **Source Finality:** A transaction is batched and settled on the Soroban AetherBridge.
-2. **Proof Generation:** A hardware-anchored proof of the settlement is generated.
-3. **EVM Sync:** The `HSPBridge.sol` contract receives the proof on HashKey Chain.
-4. **Validation:** The contract verifies the proof and the agent's ZK-identity.
-5. **Finality:** Assets are released or state is updated on the HashKey global ledger.
