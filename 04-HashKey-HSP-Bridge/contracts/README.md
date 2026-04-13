@@ -1,28 +1,23 @@
-# 04 | HashKey HSP & Soroban Bridge
+# 04-HashKey-HSP-Bridge: Institutional Contracts 🏛️
 
-This module acts as the institutional gateway for the **Horizon Sovereign Stack (HSS)**. It facilitates the secure movement of identity-verified assets between the **HashKey Chain (HSP)** and the **Stellar/Soroban** settlement layer.
+This directory contains the Solidity implementation of the HSS Bridge, designed to synchronize high-speed settlement results with the HashKey Chain while maintaining institutional-grade compliance.
 
-## 🌉 Core Functionality
-- **Institutional Compliance:** Implements the HashKey Settlement Protocol (HSP) standards to ensure all bridged assets meet sovereign regulatory requirements.
-- **Soroban Settlement:** Utilizes Rust-based smart contracts on Stellar (Soroban) to execute high-frequency, low-cost settlement ($0.01 per batch).
-- **ZK-Proof Verification:** Validates hardware-anchored identity claims before allowing cross-chain state transitions.
+## ⚖️ Compliance & Standards
+The contracts are engineered to adhere to the **HashKey Settlement Protocol (HSP)** standards, ensuring that all bridged transactions meet regulatory requirements before finality.
 
-## 🛠 Technical Stack
-- **Smart Contracts:** Rust (Soroban SDK)
-- **Protocol:** HashKey Settlement Protocol (HSP)
-- **Security:** Hardware-anchored ZK-Identity proofs
+* **Identity Verification:** Integrates hardware-anchored identity claims to ensure only verified agents can trigger bridge events.
+* **State Validation:** Uses a secure receiver logic to validate state proofs coming from the AetherBridge (Soroban) layer.
+* **Institutional Gateway:** Designed to bridge sub-cent agentic micro-payments to institutional-grade liquidity pools.
 
-## 📂 Structure
-- `/contracts`: Rust-native Soroban contracts for bridge logic and asset vaulting.
-- `/scripts`: Deployment and interaction scripts for the HashKey Testnet environment.
-- `/docs`: Technical specifications for the HSP-to-Soroban state relay.
+## 🛠 Tech Stack
+* **Language:** Solidity ^0.8.24
+* **Network:** HashKey Chain (Chain ID 177)
+* **Framework:** Hardhat / Foundry
+* **Standards:** HSP-20 Compliance
 
-## 🚀 Deployment (Dev Mode)
-To build the bridge contracts:
-1. Ensure you have the `soroban-cli` installed.
-2. Run:
-   ```bash
-   soroban contract build
-
-   To run tests:
-   soroban contract test
+## 🔄 Technical Flow
+1. **Source Finality:** A transaction is batched and settled on the Soroban AetherBridge.
+2. **Proof Generation:** A hardware-anchored proof of the settlement is generated.
+3. **EVM Sync:** The `HSPBridge.sol` contract receives the proof on HashKey Chain.
+4. **Validation:** The contract verifies the proof and the agent's ZK-identity.
+5. **Finality:** Assets are released or state is updated on the HashKey global ledger.
