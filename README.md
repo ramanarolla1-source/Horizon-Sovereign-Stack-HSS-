@@ -63,9 +63,6 @@ Solution Architecture
                  The Sovereign Digital Backbone
 
                  
-🚀 Installation & Technical Validation
-To validate the Horizon Sovereign Stack, follow this streamlined process to confirm the interoperability between the P2P discovery layer and the Soroban settlement engine.
-
 ## 🚀 Installation & Technical Validation
 
 To validate the **Horizon Sovereign Stack**, follow this streamlined process to confirm the interoperability between the P2P discovery layer and the Soroban settlement engine.
@@ -101,6 +98,7 @@ Sovereign Settlement (Rust/Soroban): High-performance smart contracts engineered
 P2P Discovery (Node.js): A local-first mesh network that eliminates dependency on centralized cloud providers.
 
 HashKey Bridge (Solidity): The institutional gateway for HSP-20 compliant asset movement and global scale.
+
 
 Resources:
 
