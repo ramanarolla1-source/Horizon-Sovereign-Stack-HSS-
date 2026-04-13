@@ -57,31 +57,28 @@ Solution Architecture
                              ▼
                 [ NATIONAL TRUST LAYER (NTL) ]
                  The Sovereign Digital Backbone
-
 🚀 Installation & Technical Validation
 To validate the Horizon Sovereign Stack, follow this streamlined process to confirm the interoperability between the P2P discovery layer and the Soroban settlement engine.
 
 1. Environment Setup
-Bash
-# Clone the repository
-git clone https://github.com/ramanarolla1-source/Horizon-Sovereign-Stack-HSS-.git
+2. # Clone the repository
+git clone [https://github.com/ramanarolla1-source/Horizon-Sovereign-Stack-HSS-.git](https://github.com/ramanarolla1-source/Horizon-Sovereign-Stack-HSS-.git)
 cd Horizon-Sovereign-Stack-HSS-
+
 2. Initialize Sovereign Settlement (Node.js)
 This launches the local P2P node responsible for network-isolated agent discovery and DRI indexing.
-
-Bash
 cd 03-Sovereign-Settlement
 npm install
 npm start
+
 Note: Ensure your local environment allows P2P discovery on the configured ports.
 
 3. Verify Soroban Smart Contracts (Rust)
 Validate the high-frequency settlement logic. Requires Stellar/Soroban CLI.
-
-Bash
 cd 04-HashKey-HSP-Bridge/contracts
 soroban contract build
 soroban contract test
+
 Expected Output:
 test result: ok. 4 passed; 0 failed; finished in 0.15s
 
@@ -93,6 +90,7 @@ Sovereign Settlement (Rust/Soroban): High-performance smart contracts engineered
 P2P Discovery (Node.js): A local-first mesh network that eliminates dependency on centralized cloud providers.
 
 HashKey Bridge (Solidity): The institutional gateway for HSP-20 compliant asset movement and global scale.
+
 
 One-Pager: https://docs.google.com/document/d/1ZfYUoclxfAS2lnqpyPIbajLQVQdOpkFh8DdSNQkDL9c/edit?usp=sharing
 
