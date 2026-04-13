@@ -16,6 +16,25 @@ The contracts are engineered to adhere to the **HashKey Settlement Protocol (HSP
 * **Standards:** HSP-20 Compliance
 
 ## 🔄 Technical Flow
+
+## 📂 Core Contracts
+
+| File | Role | Status |
+| :--- | :--- | :--- |
+| `HSPBridge.sol` | Cross-chain state receiver and finalizer | **Mainnet Ready** |
+| `IdentityVerifier.sol` | Validates hardware-anchored ZK-claims | **Audited Logic** |
+| `CompliantVault.sol` | Secure asset management for HSP-20 tokens | **Tested** |
+
+## 🧪 Security & Validation
+The bridge contracts have been rigorously tested against common cross-chain attack vectors, including replay attacks and unauthorized state injections.
+
+### Test Results Summary:
+* **[PASS]** Cross-chain state synchronization via AetherBridge proof.
+* **[PASS]** Unauthorized agent rejection (ZK-Identity failure).
+* **[PASS]** Replay attack prevention (Nonce-based validation).
+* **[PASS]** HSP-20 compliance check during asset release.
+
+* 
 1. **Source Finality:** A transaction is batched and settled on the Soroban AetherBridge.
 2. **Proof Generation:** A hardware-anchored proof of the settlement is generated.
 3. **EVM Sync:** The `HSPBridge.sol` contract receives the proof on HashKey Chain.
