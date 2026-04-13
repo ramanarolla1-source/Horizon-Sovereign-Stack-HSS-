@@ -57,6 +57,8 @@ Solution Architecture
                              ▼
                 [ NATIONAL TRUST LAYER (NTL) ]
                  The Sovereign Digital Backbone
+
+                 
 🚀 Installation & Technical Validation
 To validate the Horizon Sovereign Stack, follow this streamlined process to confirm the interoperability between the P2P discovery layer and the Soroban settlement engine.
 
