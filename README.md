@@ -28,6 +28,35 @@ Our Soroban and HashKey bridge logic is built for institutional scale.
 2. `soroban contract build`
 
 To see the **Horizon Sovereign Stack** in action, you can run the core settlement and P2P discovery module.
+Solution Architecture
+┌─────────────────────────────────────────────────────────────────┐
+│                   HORIZON SOVEREIGN STACK (HSS)                 │
+│          Institutional-Grade PayFi for the Agentic Economy      │
+├─────────────────────────────────────────────────────────────────┤
+│  [ LAYER 1: DISCOVERY ]      [ LAYER 2: SETTLEMENT ]            │
+│  DRI Decentralized Index     Aether High-Speed Logic            │
+│  (Node.js / P2P Mesh)        (Rust / Soroban)                   │
+│                                                                 │
+│  • Peer-to-Peer Discovery    • $0.01 Batch Settlement           │
+│  • Cloud-Independent         • Sub-200ms M2M Latency            │
+│  • Sovereign Credentialing   • Hardware-Anchored Trust          │
+└──────────────┬───────────────────────────┬──────────────────────┘
+               │                           │
+               ▼                           ▼
+┌──────────────────────────┐    ┌─────────────────────────────────┐
+│ [ LAYER 3: LIQUIDITY ]   │    │ [ LAYER 4: COMPLIANCE BRIDGE ]  │
+│ Xythum Protocol          │    │ HashKey HSP Implementation      │
+│ (Cross-Chain Vaults)     │    │ (Solidity / HSP-20)             │
+│                          │    │                                 │
+│ • Unified RWA Liquidity  │    │ • Institutional On-Ramp         │
+│ • Vaulted Asset Mgmt     │    │ • Global Compliance Standards   │
+│ • Automated Rebalancing  │    │ • Multi-Chain Interoperability  │
+└──────────────────────────┘    └─────────────────────────────────┘
+               │                           │
+               └─────────────┬─────────────┘
+                             ▼
+                [ NATIONAL TRUST LAYER (NTL) ]
+                 The Sovereign Digital Backbone
 
 ### 1. Clone and Setup
 ```bash
