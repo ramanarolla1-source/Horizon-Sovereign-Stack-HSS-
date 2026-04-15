@@ -98,7 +98,21 @@ Sovereign Settlement (Rust/Soroban): High-performance smart contracts engineered
 P2P Discovery (Node.js): A local-first mesh network that eliminates dependency on centralized cloud providers.
 
 HashKey Bridge (Solidity): The institutional gateway for HSP-20 compliant asset movement and global scale.
+🚀 Getting Started
+1. Environment Configuration
+The HSS requires connection strings for the blockchain layers it bridges.
+Create a .env file from the example:
+cp .env.example .env
 
+Edit .env and provide your Algorand Testnet credentials and your Sovereign Root Mnemonic.
+
+2. Build & Run
+Ensure you have Docker and Rust installed:
+# Build the hardened environment
+docker build -t hss-gateway .
+
+# Start the sovereign stack
+docker run --env-file .env hss-gateway
 
 Resources:
 
